@@ -13,11 +13,19 @@ imagenes = []
 $('#portafolio .scroller ul li').each(function(){
 	imagenes.push(this);
 });
-$('#portafolio .scroller ul').html("")
-while(imagenes.length>0){
-	al = Math.floor((Math.random() * imagenes.length));
-	$('#portafolio .scroller ul').append(imagenes[al]);
-	imagenes.pop(al);
+$('#portafolio .scroller ul').html("");
+shuffleArray(imagenes);
+for(i in imagenes){
+    $('#portafolio .scroller ul').append(imagenes[i]);
+}
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
 }
 /*---------- OTRAS -----------*/
 $('.images-bg').each(function(){
