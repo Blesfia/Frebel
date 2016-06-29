@@ -1,21 +1,28 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-    <meta charset = "utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Febrel</title>
+    <!--  FAVICON  -->
     <link rel="shortcut icon" href="static/img/favicon.ico" >
+    <!--  FONTS  -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,300,900,700" >
     <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <!--  JQUERY CSS  -->
     <link rel="stylesheet" type="text/css" href="static/css/flexslider.css">
+    <!--  ANIMATE CSS  -->
     <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
+    <!--  CSS  -->
     <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/turquoise.color.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body class="turquoise">
-    <img id="preloader" alt="" src="static/img/preloader.GIF" style="opacity: 0; display: none;">
-    <div class="left-menu" style="opacity: 1;">
+    <!--  PRELOADER  -->
+    <img id="preloader" alt="" src="static/img/preloader.GIF">
+    <!--  LEFT MENU  -->
+    <div class="left-menu">
         <a class="logo" href="index.html">Frebel</a>
         <nav class="main-navi">
             <ul>
@@ -45,65 +52,282 @@
             <a class="fa fa-dribbble" href=""></a>
             <a class="fa fa-pinterest" href=""></a>
         </div>
-        <p class="copy">Copyright © 2016, All Rights Reserved</p>
+        <p class="copy">Copyright © 2016, Todos los derechos reservados</p>
     </div>
-    <div class="right-content" style="opacity: 1;">
+    <!--  RIGHT CONTENT  -->
+    <div class="right-content">
+        <!--  SLIDER  -->
         <div class="flexslider home-page">
             <ul class="slides">
-                <li class="images-bg flex-active-slide">
-                    <img src='static/img/grandes/img4.jpg' alt="" style="display: none;" draggable="false">
+                <li class="images-bg">
+                    <img src='static/img/grandes/img4.jpg' alt="" draggable="false">
                     <div class="circle">
                         <div class="home-title left">
                             <span>Bienvenido <strong>a</strong></span>
                             <span>frebel</span>
-                            <p>Only the best pictures of animals and travel.</p>
+                            <p>Un paso a la vez.</p>
+                        </div>
+                        <a class="button-down fa fa-angle-down" href=""></a>
+                    </div>
+                </li>
+                <li class="images-bg">
+                    <img src='static/img/grandes/img1.jpg' alt="" draggable="false">
+                    <div class="circle">
+                        <div class="home-title left">
+                            <span>Bienvenido <strong>a</strong></span>
+                            <span>frebel</span>
+                            <p>Un paso a la vez.</p>
                         </div>
                         <a class="button-down fa fa-angle-down" href=""></a>
                     </div>
                 </li>
             </ul>
-            <ol class="flex-control-nav flex-control-paging">
-                <li>
-                    <a>1</a>
-                </li>
-            </ol>
-            <ul class="flex-direction-nav">
-                <li>
-                    <a class="flex-prev glyph fa-angle-left" href="#"></a>
-                </li>
-                <li>
-                    <a class="flex-next glyph fa-angle-right" href="#"></a>
-                </li>
-            </ul>
         </div>
+        <!--  PORTFOLIO  -->
         <div id="portafolio" class="portfolio column main-block">
-            <div class="scroller ri-grid-loading">
+            <div class="scroller">
+                <!--  FILTER  -->
                 <div class="filter">
-                    <a class="active" href="">todos</a>
-                    <a href="">girls</a>
-                    <a href="">fashion</a>
-                    <a href="">animals</a>
-                    <a href="">cars</a>
-                    <a href="">sport</a>
-                    <a href="">landspace</a>
+                    <a class="active" href="">all</a>
+                    <a href="">producto</a>
+                    <a href="">experiencia</a>
+                    <a href="">modelado</a>
+                    <a href="">render</a>
                 </div>
                 <ul>
-                    <li data-class="fashion">
-                        <a href=""><img src="static/img/portafolio/c1/1.jpg" alt=""></a>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img1.jpg');"></a>
                         <span><em></em></span>
                         <div>
                             <span class="title">BEAUTIFUL fashion FOTO</span>
-                            <span class="class">fashion</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img2.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img4.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img3.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img4.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img5.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img6.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img7.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img8.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img9.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img10.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img11.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img12.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img13.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img14.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img15.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="producto"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/producto/img16.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">producto</span>
+                        </div>
+                    </li>
+                    <li data-class="experiencia"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/experiencia/img1.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">experiencia</span>
+                        </div>
+                    </li>
+                    <li data-class="experiencia"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/experiencia/img2.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">experiencia</span>
+                        </div>
+                    </li>
+                    <li data-class="experiencia"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/experiencia/img3.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">experiencia</span>
+                        </div>
+                    </li>
+                    <li data-class="experiencia"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/experiencia/img4.png');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">experiencia</span>
+                        </div>
+                    </li>
+                    <li data-class="modelado"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/modelado/img1.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">modelado</span>
+                        </div>
+                    </li>
+                    <li data-class="modelado"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/modelado/img2.png');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">modelado</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img1.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img2.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img3.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img5.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
+                        </div>
+                    </li>
+                    <li data-class="render"  style="height: 200px;">
+                        <a href="" style="background-image: url('static/img/render/img6.jpg');"></a>
+                        <span><em></em></span>
+                        <div>
+                            <span class="title">BEAUTIFUL fashion FOTO</span>
+                            <span class="class">render</span>
                         </div>
                     </li>
                 </ul>
-            </div>            
+            </div> 
+
             <div class="scroller__track">
                 <div class="scroller__bar"></div>
             </div>
         </div>
         <!--  PORTFOLIO WITH DETAILS  -->
-       
+
         <!--  //PORTFOLIO WITH DETAILS  -->
     </div>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
