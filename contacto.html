@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Febrel V1</title>
+    <!--  FAVICON  -->
+    <link rel="shortcut icon" href="static/img/favicon.ico" >
+    <!--  FONTS  -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,300,900,700" >
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <!--  JQUERY CSS  -->
+    <link rel="stylesheet" type="text/css" href="static/css/flexslider.css">
+    <!--  ANIMATE CSS  -->
+    <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
+    <!--  CSS  -->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <!--  PRELOADER  -->
+    <img id="preloader" alt="" src="static/img/preloader.GIF">
+    <!--  LEFT MENU  -->
+    <div class="left-menu">
+        <a class="logo" href="index.html">Frebel</a>
+        <nav class="main-navi">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Inicio<span class="dot"></span><span class="corner"></span>
+                    </a>
+                </li>
+                <li>
+                    <a id="linkPortafolio" href="#" class="linkPortafolio">
+                        Portafolio<span class="dot"></span><span class="corner"></span>
+                    </a>
+                </li>
+                <li>
+                    <a id="quienesLink" href="#">
+                        Quienes somos<span class="dot"></span><span class="corner"></span>
+                    </a>
+                </li>
+                <li>
+                    <a id="quienesLink" href="#">
+                        Quienes somos<span class="dot"></span><span class="corner"></span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ContactoLink" href="/contacto.html" class="active">
+                        Contactos<span class="dot"></span><span class="corner"></span>
+                    </a>
+                </li>
+            </ul>
+            <em id="showHideMenu" class="show-hide-menu fa fa-bars" href=""></em>
+        </nav>
+        <div class="soc-icons">
+            <a class="fa fa-twitter" href=""></a>
+            <a class="fa fa-facebook" href=""></a>
+            <a class="fa fa-google-plus" href=""></a>
+            <a class="fa fa-linkedin" href=""></a>
+            <a class="fa fa-dribbble" href=""></a>
+            <a class="fa fa-pinterest" href=""></a>
+        </div>
+        <p class="copy">Copyright © 2016, Todos los derechos reservados</p>
+    </div>
+    <!--  RIGHT CONTENT  -->
+    <div class="right-content">
+        <div class="contact main-block">
+            <div class="left-content col-lg-9 baron" data-baron-v="inited">
+                <div class="scroller">
+                    <!--  MAP  -->
+                    <div id="map" class="map" ></div>
+                    <!--  //MAP  -->
+                    <article class="left-content-text">
+                        <h2>Contactos</h2>
+                        <strong>Puedes contactarme</strong>
+                        <div class="row contact-details">
+                            <div class="contact-info col-lg-6 col-md-6 col-sm-6">
+                                <p>Un gran parafo por aqui.</p>
+                                <p class="mini">Un mini parrafo por aca.</p>
+                                <div class="info-block">
+                                    <em class="fa fa-phone"></em>
+                                    <strong>Telfono</strong>
+                                    <span class="phone">(57) (03) 314 338 16 99</span>
+                                </div>
+                                <div class="info-block">
+                                    <em class="fa fa-envelope"></em>
+                                    <strong>e-mail</strong>
+                                    <span>tatiana.pabon@noestoyseguro taty.pl@fotohunter.com</span>
+                                </div>
+                                <div class="info-block">
+                                    <em class="fa fa-map-marker"></em>
+                                    <strong>direccion</strong>
+                                    <span>Cali, Valle del Cauca, Cra 100 # no se</span>
+                                </div>
+                            </div>
+                            <div class="form col-lg-6 col-md-6 col-sm-6">
+                                <form id="ajax-contact-form" action="javascript:void(0);">
+                                    <input name="name" placeholder="Nombre" type="text">
+                                    <input name="email" id="email" placeholder="e-mail" type="text">
+                                    <input name="phone" id="phone" placeholder="Teleofno" type="text">
+                                    <textarea name="message" placeholder="Mensaje"></textarea>
+                                    <input id="submit" value="Enviar mensaje" type="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>   
+                <div class="scroller__track">
+                    <div class="scroller__bar" style="height: 79px; top: 0px;"></div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="static/js/jquery.gridrotator.js"></script>
+    <script type="text/javascript" src="static/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="static/js/baron.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/david.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+</body>
+<script type="text/javascript">
+    initMap()
+    function agrandarImagen(src){
+        $('#imagen_grande').attr('src',src)
+    }
+    function initMap() {
+          // Create a map object and specify the DOM element for display.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 3.42, lng: -76.54},
+            scrollwheel: false,
+            zoom: 12
+          });
+    }
+</script>
+</html>
