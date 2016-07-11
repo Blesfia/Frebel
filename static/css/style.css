@@ -1625,8 +1625,9 @@ a, a:hover, a:active,button, button:hover, button:active{
 	}
 	.details-close,
 	.portfolio-with-details .button-close {
-	    background: #1A1A1A;
-	    bottom: 30px;
+	    background: white;
+	    top: 30px;
+	    border: 1px solid black;
 	    height: 80px;
 	    position: absolute;
 	    right: 111px;
