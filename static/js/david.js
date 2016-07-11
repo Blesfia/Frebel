@@ -28,7 +28,6 @@ function shuffleArray(array) {
 }
 /*---------- OTRAS -----------*/
 $('.images-bg').each(function(){
-    alert("s")
 	$(this).css({
 		'background-image': 'url(' +$('img', this).hide().attr('src') +')',
 		'height': $(window).height()
