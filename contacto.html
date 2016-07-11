@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a id="ContactoLink" href="/contacto.html" class="active">
+                    <a id="ContactoLink" href="#" class="active">
                         Contactos<span class="dot"></span><span class="corner"></span>
                     </a>
                 </li>
@@ -89,13 +89,11 @@
                                 </div>
                             </div>
                             <div class="form col-lg-6 col-md-6 col-sm-6">
-                                <form id="ajax-contact-form" action="javascript:void(0);">
-                                    <input name="name" placeholder="Nombre" type="text">
-                                    <input name="email" id="email" placeholder="e-mail" type="text">
-                                    <input name="phone" id="phone" placeholder="Telefono" type="text">
-                                    <textarea name="message" placeholder="Mensaje"></textarea>
-                                    <input id="submit" value="Enviar mensaje" type="submit">
-                                </form>
+                                <input id="name" name="name" placeholder="Nombre" type="text">
+                                <input name="email" id="email" placeholder="e-mail" type="text">
+                                <input name="phone" id="phone" placeholder="Telefono" type="text">
+                                <textarea id="message" name="message" placeholder="Mensaje"></textarea>
+                                <input id="submit" value="Enviar mensaje" type="submit" onclick="enviarMensaje()">
                             </div>
                         </div>
                     </article>
@@ -117,9 +115,6 @@
 </body>
 <script type="text/javascript">
     initMap()
-    function agrandarImagen(src){
-        $('#imagen_grande').attr('src',src)
-    }
     function initMap() {
           // Create a map object and specify the DOM element for display.
           var map = new google.maps.Map(document.getElementById('map'), {
@@ -127,6 +122,9 @@
             scrollwheel: false,
             zoom: 12
           });
+    }
+    function enviarMensaje(){
+        window.location.href =encodeURI('mailto:ctatianapabon@outlook.com?subject=Mensaje Frebel&cc=frebeltp@gmail.com&Body= Mensaje de '+$("#name").val()+'\nTelefono: '+$("#phone").val()+'\n Mensaje: '+$("#message").val())
     }
 </script>
 </html>
