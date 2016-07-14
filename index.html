@@ -60,15 +60,15 @@
     <!--  RIGHT CONTENT  -->
     <div class="right-content">
         <!--  SLIDER  -->
-        <div class="flexslider home-page">
+        <div class="flexslider home-page ">
             <ul class="slides">
                 <li class="images-bg">
                     <img src='static/img/grandes/img4.jpg' alt="" draggable="false">
                     <div class="circle">
                         <div class="home-title left">
-                            <span>Bienvenido <strong>a</strong></span>
-                            <span>frebel</span>
-                            <p>Un paso a la vez.</p>
+                            <span class=" caviar-dreams">Bienvenido <strong>a</strong></span>
+                            <span class=" caviar-dreams">frebel</span>
+                            <p class=" caviar-dreams">Un paso a la vez.</p>
                         </div>
                         <a class="button-down fa fa-angle-down linkPortafolio" href=""></a>
                     </div>
@@ -77,9 +77,9 @@
                     <img src='static/img/grandes/img1.jpg' alt="" draggable="false">
                     <div class="circle">
                         <div class="home-title left">
-                            <span>Bienvenido <strong>a</strong></span>
-                            <span>frebel</span>
-                            <p>Un paso a la vez.</p>
+                            <span class=" caviar-dreams">Bienvenido <strong>a</strong></span>
+                            <span class=" caviar-dreams">frebel</span>
+                            <p class=" caviar-dreams">Un paso a la vez.</p>
                         </div>
                         <a class="button-down fa fa-angle-down linkPortafolio" href=""></a>
                     </div>
@@ -372,6 +372,14 @@
     <script type="text/javascript" src="static/js/baron.js"></script>
     <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="static/js/david.js"></script>
+    <script src="http://cufon.shoqolate.com/js/cufon-yui.js" type="text/javascript"></script>
+    <script src="static/js/caviar-dreams.cufonfonts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        Cufon.replace('.caviar-dreams', { fontFamily: 'Caviar Dreams', hover: true }); 
+        Cufon.replace('.caviar-dreams-bold-italic', { fontFamily: 'Caviar Dreams Bold Italic', hover: true }); 
+        Cufon.replace('.caviar-dreams-bold', { fontFamily: 'Caviar Dreams Bold', hover: true }); 
+        Cufon.replace('.caviar-dreams-italic', { fontFamily: 'Caviar Dreams Italic', hover: true }); 
+    </script>
 </body>
 <script type="text/javascript">
     function agrandarImagen(src){
@@ -379,4 +387,5 @@
         $('.portfolio').addClass('animate');
     }
 </script>
+
 </html>
