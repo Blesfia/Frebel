@@ -32,12 +32,12 @@
                     </a>
                 </li>
                 <li>
-                    <a id="linkPortafolio" href="#" class="linkPortafolio">
+                    <a id="linkPortafolio" href="#" onclick="mostrarPortafolio()" class="linkPortafolio">
                         Portafolio<span class="dot"></span><span class="corner"></span>
                     </a>
                 </li>
                 <li>
-                    <a id="quienesLink" href="#"  class="active">
+                    <a id="quienesLink" href="#" onclick="ocultarPortafolio()"  class="active">
                         Quienes somos<span class="dot"></span><span class="corner"></span>
                     </a>
                 </li>
@@ -60,7 +60,7 @@
     <!--  RIGHT CONTENT  -->
     <div class="right-content" style="overflow: scroll; background-color: white;">
         <!--  QUIENES  -->
-        <div class="col-xs-12" style=" padding:0px; height:100%;">
+        <div id="quienes" class="col-xs-12" style=" padding:0px; height:100%;">
             <!-- IMAGENES TOP -->
             <div class="row" style="background-size: 100% 100%;">
                 <div class="col-xs-12" style="background-image: url('static/img/quienes_top.png'); background-size: inherit;">
@@ -148,6 +148,9 @@
                 </div>
             </div>
         </div>
+        <!--  PORTFOLIO  -->
+        <iframe id="portafolio" src="portafolio.html" class="portfolio column main-block" style="display:none; width: 100%; height: 100%;">
+        </iframe>
     </div>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <script type="text/javascript" src="static/js/modernizr.custom.js"></script>
@@ -169,6 +172,19 @@
     function agrandarImagen(src){
         console.log("asd")
         $('#imagen_grande').attr('src',src)
+    }
+    function mostrarPortafolio(){
+        $('#portafolio').css('display', 'initial');
+        $('#quienes').css('display', 'none');
+        $('#quienesLink').removeClass('active');
+        $('#linkPortafolio').addClass('active');
+
+    }
+    function ocultarPortafolio(){
+        $('#portafolio').css('display', 'none');
+        $('#quienes').css('display', 'initial');
+        $('#linkPortafolio').removeClass('active');
+        $('#quienesLink').addClass('active');
     }
 
 </script>
